@@ -1,11 +1,11 @@
 {
   "name": "codehaus-nodemailer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && bash scripts/copy-package.sh"
+    "build": "tsc && bash scripts/copyFilesToDist.sh"
   },
   "repository": {
     "type": "git",

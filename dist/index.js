@@ -12,4 +12,6 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./codehaus-email/codehaus-email.module"), exports);
 __exportStar(require("./codehaus-email/codehaus-email.service"), exports);
+__exportStar(require("./codehaus-email/lib/model/email-config"), exports);
+__exportStar(require("./codehaus-email/lib/model/email-sender"), exports);
 //# sourceMappingURL=index.js.map
