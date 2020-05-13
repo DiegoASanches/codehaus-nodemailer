@@ -1,0 +1,1 @@
+{"version":3,"file":"email-config.d.ts","sourceRoot":"","sources":["../../../../src/codehaus-email/lib/model/email-config.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,WAAW;IACxB,IAAI,EAAE,OAAO,CAAC;IACd,IAAI,EAAE,MAAM,CAAC;IACb,IAAI,EAAE,MAAM,CAAC;IACb,MAAM,EAAE,OAAO,CAAC;IAChB,IAAI,EAAE;QACF,IAAI,EAAE,MAAM,CAAC;QACb,IAAI,EAAE,MAAM,CAAC;KAChB,CAAA;CACJ"}

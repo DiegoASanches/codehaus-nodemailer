@@ -1,0 +1,1 @@
+{"version":3,"file":"codehaus-email.module.d.ts","sourceRoot":"","sources":["../../src/codehaus-email/codehaus-email.module.ts"],"names":[],"mappings":"AAAA,OAAO,EAAU,aAAa,EAAE,MAAM,gBAAgB,CAAC;AAGvD,OAAO,EAAE,WAAW,EAAE,MAAM,0BAA0B,CAAC;AAEvD,qBAGa,mBAAmB;IAC9B,MAAM,CAAC,QAAQ,CAAC,OAAO,EAAE,WAAW,GAAG,aAAa;CAgBrD"}
