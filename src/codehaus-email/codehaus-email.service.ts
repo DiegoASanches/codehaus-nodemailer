@@ -24,6 +24,7 @@ export class CodehausEmailService {
 
         if (templatePath) {
             return await this.renderTemplate(options, templatePath, data, (err, opt) => {
+                console.error('Email Error', err);
                 return transporter.sendMail(opt);
             });
         } else {

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && bash scripts/copyFilesToDist.sh"
+    "build": "tsc && bash scripts/copy-package.sh"
   },
   "repository": {
     "type": "git",

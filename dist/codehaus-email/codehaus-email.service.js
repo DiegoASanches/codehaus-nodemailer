@@ -46,6 +46,7 @@ let CodehausEmailService = /** @class */ (() => {
             const transporter = nodemailer.createTransport(this.config);
             if (templatePath) {
                 return await this.renderTemplate(options, templatePath, data, (err, opt) => {
+                    console.error('Email Error', err);
                     return transporter.sendMail(opt);
                 });
             }
