@@ -6,7 +6,7 @@
 
 
 ### Description
-Send e-mails from Nest.js (Node.js) using `handlebars`.
+Send e-mails from Nest.js (Node.js) using `handlebars` and `nodemailer`.
 
 
 ### Features
@@ -27,10 +27,10 @@ import { CodehausEmailModule } from 'codehaus-nodemailer';
       pool: true,
       host: process.env.EMAIL_HOST,
       port: process.env.EMAIL_PORT,
-      secure: true,
+      secure: true, // true for 465, false for other ports
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASSWORD,
+        user: process.env.EMAIL_USER, // generated ethereal user
+        pass: process.env.EMAIL_PASSWORD, // generated ethereal password
       }
     }),
   ],
@@ -38,6 +38,29 @@ import { CodehausEmailModule } from 'codehaus-nodemailer';
   providers: [MyService],
 })
 export class MyModule { }
+
+```
+Params:
+- `port` – is the port to connect to (defaults to 587 if is secure is false or 465 if true)
+- `host` – is the hostname or IP address to connect to (defaults to ‘localhost’)
+- `auth` – defines authentication data (see authentication section below)
+- `secure` – if true the connection will use TLS when connecting to server. If false (the default) then TLS is used if server supports the STARTTLS extension. In most cases set this value to true if you are connecting to port 465. For port 587 or 25 keep it false
+- `pool` – see Pooled SMTP for details about connection pooling
+
+Module Params:
+
+```typescript
+
+interface {
+    pool: boolean;
+    host: string;
+    port: number;
+    secure: boolean; // use TLS
+    auth: {
+        user: string;
+        pass: string;
+    }
+}
 
 ```
 
@@ -57,13 +80,29 @@ export class MyService {
         await this.codehausEmailService.send({
             from: 'myEmail@codehaus.com.br',
             to: 'destineEmail@codehaus.com.br',
-            templatePath: 'src/templates/template.html',
+            templatePath: 'src/templates/template.html', // RELATIVE path only
             subject: 'My subject',
             data: {
                 username: 'Mike'
             }
         });
     }
+}
+
+```
+
+SendEmail Params:
+
+```typescript
+
+interface EmailSender {
+    from: string;
+    to: string;
+    subject: string;
+    text?: string;
+    html?: string;
+    templatePath?: string;
+    data?: any;
 }
 
 ```
