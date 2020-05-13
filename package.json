@@ -1,0 +1,19 @@
+{
+  "name": "codehaus-nodemailer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoASanches/codehaus-nodemailer.git"
+  },
+  "author": "Diego Sanches",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiegoASanches/codehaus-nodemailer/issues"
+  },
+  "homepage": "https://github.com/DiegoASanches/codehaus-nodemailer#readme"
+}
