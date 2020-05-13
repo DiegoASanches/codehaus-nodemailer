@@ -1,6 +1,6 @@
 #### Codehaus Nodemailer
 
-<img src="https://i.ibb.co/jrgM0LQ/logo-vetorizada-final-colors.png" alt="logo-vetorizada-final-colors" border="0">
+<img style="width: 200px" src="https://i.ibb.co/jrgM0LQ/logo-vetorizada-final-colors.png" alt="logo-vetorizada-final-colors" border="0">
 
 [![NPM](https://nodei.co/npm/codehaus-nodemailer.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/codehaus-nodemailer/)
 
