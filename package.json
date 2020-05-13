@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/DiegoASanches/codehaus-nodemailer/issues"
   },
-  "homepage": "https://github.com/DiegoASanches/codehaus-nodemailer#readme"
+  "homepage": "https://github.com/DiegoASanches/codehaus-nodemailer#readme",
+  "dependencies": {
+    "@nestjs/common": "^7.0.11",
+    "rxjs": "^6.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.2"
+  }
 }
